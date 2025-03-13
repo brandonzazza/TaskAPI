@@ -1,0 +1,25 @@
+{
+  "name": "taskapi",
+  "version": "1.0.0",
+  "description": "A simple restful api I made for managing my tasks",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonzazza/TaskAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonzazza/TaskAPI/issues"
+  },
+  "homepage": "https://github.com/brandonzazza/TaskAPI#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
