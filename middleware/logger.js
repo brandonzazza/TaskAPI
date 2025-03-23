@@ -8,7 +8,10 @@ const logger = (req, res, next) => {
     if(!fs.existsSync(LOG_PATH)){
         fs.mkdirSync(LOG_PATH, { recursive: true });
     }
-    fs.appendFile(LOG_FILE, "Test", (err) => {
+    
+    const log_message = `Date: ${new Date().toISOString()} ~~  Method: ${req.method} ~~  Path: ${req.path}\n`;
+
+    fs.appendFile(LOG_FILE, log_message, (err) => {
         if (err) {
           console.error('Error appending to file:', err);
           return;
