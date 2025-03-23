@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const LOG_PATH = path.join("..", "/logs");
+const LOG_PATH = path.join(__dirname, "..", "logs");
 const LOG_FILE = path.join(LOG_PATH, "log.txt");
 
 const logger = (req, res, next) => {
